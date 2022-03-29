@@ -13,3 +13,13 @@
 ### - JavaScript;
 
 ### - HTML;
+
+## Imagens da Aplicação
+
+### Passo 1: insira as informações solicitadas
+
+![alt text](https://github.com/lucianonevesln/javascript_calculo_retencoes/blob/master/img0.png)
+
+### Passo 2: observe o retorno das retenções calculadas
+
+![alt text](https://github.com/lucianonevesln/javascript_calculo_retencoes/blob/master/img1.png)
