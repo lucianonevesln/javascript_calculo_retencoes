@@ -1,5 +1,6 @@
 // funcao para calcular e retornar salario, inss, irrf e salario liquido
-function calcularRetencoes () {
+function calcularRetencoes ()
+{
 
     // declaracao de variaveis
     let nome = document.getElementById('nome').value;
@@ -8,31 +9,33 @@ function calcularRetencoes () {
     let irrf = 0.00;
 
     // calculo de inss
-    switch (true) {
-        case salarioBruto <= 1212.00:
+    switch (true)
+    {
+        case salarioBruto <= 1302.00:
             inss = salarioBruto * 0.075;
             salarioInss = salarioBruto - (salarioBruto * 0.075);
             break;
-        case salarioBruto > 1212.00 && salarioBruto <= 2427.35:
-            inss = salarioBruto * 0.09 - 18.18;
-            salarioInss = salarioBruto - (salarioBruto * 0.09 - 18.18);
+        case salarioBruto > 1302.00 && salarioBruto <= 2571.29:
+            inss = salarioBruto * 0.09 - 19.53;
+            salarioInss = salarioBruto - (salarioBruto * 0.09 - 19.53);
             break;
-        case salarioBruto > 2427.35 && salarioBruto <= 3641.03:
-            inss = salarioBruto * 0.12 - 91.00;
-            salarioInss = salarioBruto - (salarioBruto * 0.12 - 91.00);
+        case salarioBruto > 2571.29 && salarioBruto <= 3856.94:
+            inss = salarioBruto * 0.12 - 96.67;
+            salarioInss = salarioBruto - (salarioBruto * 0.12 - 96.67);
             break;
-        case salarioBruto > 3641.03 && salarioBruto <= 7087.22:
-            inss = salarioBruto * 0.14 - 163.82;
-            salarioInss = salarioBruto - (salarioBruto * 0.14 - 163.82);
+        case salarioBruto > 3856.94 && salarioBruto <= 7507.49:
+            inss = salarioBruto * 0.14 - 173.81;
+            salarioInss = salarioBruto - (salarioBruto * 0.14 - 173.81);
             break;
-        case salarioBruto > 7087.22:
-            inss = 828.39;
-            salarioInss = salarioBruto - 828.39;
+        case salarioBruto > 7507.49:
+            inss = 877.24;
+            salarioInss = salarioBruto - 877.24;
             break;
-        };
+    };
 
     // calculo de irrf
-    switch (true) {
+    switch (true)
+    {
         case salarioInss <= 1903.98:
             salarioIrrf = salarioInss;
             break;
